@@ -1,0 +1,123 @@
+﻿<!-- manager.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <title class:"head" >Manager Page</title>
+</head>
+<body>
+    <div id="manager-container">
+
+        <h1>Welcome to the Manager Page</h1>
+
+        <table>
+            <tr>
+                <th>Tenant ID#</th>
+                <th>Name</th>
+                <th>Phone #</th>
+                <th>Email</th>
+                <th>Check-in Date</th>
+                <th>Check-out Date</th>
+                <th>Apartment #</th>
+                <th>Remove/change Option</th>
+
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Henry Duncan</td>
+                <td>1(717)720-5879</td>
+                <td>HDuncan@gmail.com</td>
+                <td>12-20-2008</td>
+                <td>NA</td>
+                <td>107A</td>
+                <td><button type="button" id="Remove">Remove</button> <br /> <button type="button" id="Update_Tenant">Update</button></td>
+
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Barbra Turner</td>
+                <td>1(717)872-6978</td>
+                <td>bturn15@comcast.net</td>
+                <td>08-17-2017</td>
+                <td>NA</td>
+                <td>207B</td>
+                <td><button type="button" id="Remove">Remove</button> <br /> <button type="button" id="Update_Tenant">Update</button></td>
+
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Stanford Richards</td>
+                <td>1(717)502-8967</td>
+                <td>srich72@yahoo.com</td>
+                <td>07-06-2010</td>
+                <td>NA</td>
+                <td>305B</td>
+                <td><button type="button" id="Remove">Remove</button> <br /> <button type="button" id="Update_Tenant">Update</button></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Johnathan Carter</td>
+                <td>1(717)234-5678</td>
+                <td>jcart87@bing.com</td>
+                <td>04-16-2018</td>
+                <td>06-15-2020</td>
+                <td>302A</td>
+                <td><button type="button" id="Remove">Remove</button> <br /> <button type="button" id="Update_Tenant">Update</button></td>
+
+            </tr>
+
+            <tr>
+                <td>5</td>
+                <td>Monica Mathews</td>
+                <td>1(717)132-5874</td>
+                <td>mmath@gmail.com</td>
+                <td>03-28-2019</td>
+                <td>NA</td>
+                <td>104A</td>
+                <td><button type="button" id="Remove">Remove</button> <br /> <button type="button" id="Update_Tenant">Update</button></td>
+
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Patrica Parker</td>
+                <td>1(717)659-8872</td>
+                <td>patpark@comcast.net</td>
+                <td>04-27-2015</td>
+                <td>02-16-2021</td>
+                <td>209B</td>
+                <td><button type="button" id="Remove">Remove</button> <br /> <button type="button" id="Update_Tenant">Update</button></td>
+
+            </tr>
+
+
+        </table>
+
+        <form action="./AddTenant" method="post">
+            <label for="Tenant_Name">Tenant Name:</label>
+            <input class="textbox" type="text" id="Tenant_Name" name="Tenant_Name" required><br />
+
+            <label for="Phone #">Phone #:</label>
+            <input class="textbox" type="text" id="Phone #" name="Phone #" required><br>
+
+            <label for="Email">Email:</label>
+            <input class="textbox" type="text" id="Email" name="Email" required><br>
+
+            <label for="Date_Checkin">Check-in Date: </label>
+            <input class="textbox" type="text" id="Date_Checkin" name="Date_Checkin" required><br>
+
+            <label for="Date_Checkout">Check-Out Date:</label>
+            <input class="textbox" type="text" id="Date_Checkout" name="Date_Checkout" required> (NA: if still resident)<br>
+
+            <label for="Appartemnt">Appartment #:</label>
+            <input class="textbox" type="text" id="Appartment#" name="Appartment" required><br /><br />
+
+            <button type="submit" id="AddButton">Submit Addition</button>
+            <button type="button" id="CancelAdd">Cancel</button>
+        </form>
+
+    </div>
+    <script src="manager.js"></script>
+</body>
+</html>

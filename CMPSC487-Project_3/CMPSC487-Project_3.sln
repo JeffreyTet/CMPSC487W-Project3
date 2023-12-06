@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34221.43
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{95CE9346-3B85-4B34-9A03-4FBB9C6F70B0}"
+	ProjectSection(SolutionItems) = preProject
+		app.js = app.js
+		Index.html = Index.html
+		maintenance.html = maintenance.html
+		maintenance.js = maintenance.js
+		manager.html = manager.html
+		manager.js = manager.js
+		server.js = server.js
+		Style.css = Style.css
+		tenant.html = tenant.html
+		tenant.js = tenant.js
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C6000BE4-84C9-4FCB-A827-2FFA12053FCF}
+	EndGlobalSection
+EndGlobal

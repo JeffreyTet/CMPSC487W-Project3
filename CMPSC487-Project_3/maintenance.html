@@ -1,0 +1,131 @@
+﻿<!-- maintenance.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <title class:"head" >Maintenance Page</title>
+</head>
+<body>
+    <div id="maintenance-container">
+
+        <h1>Welcome to the Maintenance Page</h1>
+
+        <table>
+            <tr>
+                <th>Request ID</th> <!--auto generated-->
+                <th>Apartment #</th> <!--all apartemts-->
+                <th>Area of Problem</th>
+                <th>Description</th>
+                <th>Date/Time</th> <!--auto generated-->
+                <th>Photo(Optional)</th>
+                <th>Request Status</th> <!--pending or complete-->
+                <th>Accept Task</th>
+            </tr>
+            <tr>
+                <td>15783</td>
+                <td>107A</td>
+                <td>Kitchen</td>
+                <td>Sink Flooded</td>
+                <td></td> <!--auto generated-->
+                <td>Photo</td>
+                <td>pending</td> <!--pending or complete-->
+                <td>
+                    <label for="Accept_Task">Select Task</label><button type="button" id="Accept_Task">Accept</button>
+                </td>
+
+            </tr>
+            <tr>
+                <td>28569</td>
+                <td>207B</td>
+                <td>Bedroom</td>
+                <td>Hole in Wall</td>
+                <td></td> <!--auto generated-->
+                <td>Photo</td>
+                <td>complete</td> <!--pending or complete-->
+                <td>
+                    <label for="Accept_Task">Select Task</label><button type="button" id="Accept_Task">Accept</button>
+                </td>
+
+            </tr>
+            <tr>
+                <td>79285</td>
+                <td>305B</td>
+                <td>Bathroom</td>
+                <td>Flooded Toilet</td>
+                <td></td> <!--auto generated-->
+                <td>Photo</td>
+                <td>complete</td> <!--pending or complete-->
+                <td>
+                    <label for="Accept_Task">Select Task</label><button type="button" id="Accept_Task">Accept</button>
+                </td>
+
+            </tr>
+            <tr>
+                <td>87543</td>
+                <td>107A</td>
+                <td>Bedroom</td>
+                <td>Hole in Ceiling</td>
+                <td></td> <!--auto generated-->
+                <td>Photo</td>
+                <td>complete</td> <!--pending or complete-->
+                <td>
+                    <label for="Accept_Task">Select Task</label><button type="button" id="Accept_Task">Accept</button>
+                </td>
+
+            </tr>
+
+            <tr>
+                <td>56824</td>
+                <td>104A</td>
+                <td>Kitchen</td>
+                <td>Broken Fridge</td>
+                <td></td> <!--auto generated-->
+                <td>Photo</td>
+                <td>pending</td> <!--pending or complete-->
+                <td>
+                    <label for="Accept_Task">Select Task</label><button type="button" id="Accept_Task">Accept</button>
+                </td>
+
+            </tr>
+            <tr>
+                <td>29523</td>
+                <td>107A</td>
+                <td>Bathroom</td>
+                <td>Broken Shower</td>
+                <td></td> <!--auto generated-->
+                <td>Photo</td>
+                <td>pending</td> <!--pending or complete-->
+                <td>
+                    <label for="Accept_Task">Select Task</label><button type="button" id="Accept_Task">Accept</button>
+                </td>
+
+            </tr>
+
+        </table> <br />
+        <form action="/search" method="post">
+            <label for="Search">Search:</label>
+            <input type="text" id="Search" class="textbox"> to (for DateSearch) <input type="text" id="Search" class="textbox"><br />
+            <button id="Search_by_Apartment-btn">Appartment_Search</button>
+            <button id="Search_by_Area-btn">Area_Search</button>
+            <button id="Search_by_Date-btn">Date_Search</button>
+            <button id="Search_by_Status-btn">Status_Search</button>
+
+        </form> <br />
+        <form action="/filter" method="post">
+            <label for="Filter">Filter:</label>
+            <input type="text" id="Filter" class="textbox"> to (for DateFilter) <input type="text" id="Filter" class="textbox"><br />
+            <button id="Filter_by_Apartment-btn">Appartment_Filter</button>
+            <button id="Filter_by_Area-btn">Area_Filter</button>
+            <button id="Filter_by_Date-btn">Date_Filter</button>
+            <button id="Filter_by_Status-btn">Status_Filter</button>
+        </form>
+
+
+
+
+    </div>
+    <script src="maintenance.js"></script>
+</body>
+</html>

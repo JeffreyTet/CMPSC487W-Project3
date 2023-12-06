@@ -1,0 +1,42 @@
+﻿body {
+    background-color: indianred;
+   
+}
+
+.head {
+    text-align: center;
+    height: 50px;
+    margin: 10px auto;
+    color: white;
+}
+
+
+.textbox_user {
+    width: 500px;
+    margin: 10px;
+}
+
+.textbox_password {
+
+    width: 500px;
+    margin: 10px;
+}
+.textbox {
+   
+}
+.textbox2 {
+    height: 150px;
+    width: 500px;
+    margin: 10px;
+}
+
+
+table, tr, th, td, caption {
+    border: 1px solid #000000;
+    border-collapse: collapse;
+    padding: 0.5rem;
+    width: 1000px;
+
+}
+
+

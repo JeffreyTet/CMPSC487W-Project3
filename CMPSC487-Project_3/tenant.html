@@ -1,0 +1,83 @@
+﻿<!-- tenant.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <title class:"head" >Tenant Page</title>
+</head>
+<body>
+    <div id="tenant-container">
+
+        <h1>Welcome to the Tenant Page</h1>
+
+        <table>
+            <tr>
+                <th>Request ID</th> <!--auto generated-->
+                <th>Apartment #</th> <!--all apartemts-->
+                <th>Area of Problem</th>
+                <th>Description</th>
+                <th>Date/Time</th> <!--auto generated-->
+                <th>Photo(Optional)</th>
+                <th>Request Status</th> <!--pending or complete-->
+                
+            </tr>
+            <tr>
+                <td>15783</td>
+                <td>107A</td>
+                <td>Kitchen</td>
+                <td>Sink Flooded</td>
+                <td></td> <!--auto generated-->
+                <td>Photo</td>
+                <td>pending</td> <!--pending or complete-->
+
+            </tr>
+            <tr>
+                <td>87543</td>
+                <td>107A</td>
+                <td>Bedroom</td>
+                <td>Hole in Ceiling</td>
+                <td></td> <!--auto generated-->
+                <td>Photo</td>
+                <td>complete</td> <!--pending or complete-->
+
+            </tr>
+            <tr>
+                <td>29523</td>
+                <td>107A</td>
+                <td>Bathroom</td>
+                <td>Broken Shower</td>
+                <td></td> <!--auto generated-->
+                <td>Photo</td>
+                <td>pending</td> <!--pending or complete-->
+
+            </tr>
+
+
+        </table><br />
+
+        <form action="./MakeRequest" method="post">
+            <label for="Appartemnt" >Appartment #:</label>
+            <input class="textbox" type="text" id="Appartment#" name="Appartment" required><br/><br />
+
+            <label for="Area">Location of Problem:</label>
+            <input class="textbox" type="text" id="Area" name="Location" required><br>
+
+            <label for="Description" ">Problem Description:</label>
+            <input class="textbox2" type="text" id="Discription" name="Description" required><br>
+
+            <label for="Photo" ">Photo: </label> 
+            <button type="submit" id="PhotoSubmit">Upload Photo</button><br /><br />
+            
+            <button type="submit" id="RequestButton">Submit Request</button>
+            <button id="CancelRequest">Cancel Request</button>
+        </form>
+
+
+
+
+    </div>
+    <script src="tenant.js"></script>
+</body>
+</html>
